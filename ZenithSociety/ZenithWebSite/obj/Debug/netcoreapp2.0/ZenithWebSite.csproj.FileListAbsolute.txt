@@ -1,0 +1,12 @@
+/Users/vitor/Documents/BCIT/COMP3973/assignment2/ZenithSociety/ZenithWebSite/bin/Debug/netcoreapp2.0/app.db
+/Users/vitor/Documents/BCIT/COMP3973/assignment2/ZenithSociety/ZenithWebSite/bin/Debug/netcoreapp2.0/ZenithWebSite.deps.json
+/Users/vitor/Documents/BCIT/COMP3973/assignment2/ZenithSociety/ZenithWebSite/bin/Debug/netcoreapp2.0/ZenithWebSite.runtimeconfig.json
+/Users/vitor/Documents/BCIT/COMP3973/assignment2/ZenithSociety/ZenithWebSite/bin/Debug/netcoreapp2.0/ZenithWebSite.runtimeconfig.dev.json
+/Users/vitor/Documents/BCIT/COMP3973/assignment2/ZenithSociety/ZenithWebSite/bin/Debug/netcoreapp2.0/ZenithWebSite.dll
+/Users/vitor/Documents/BCIT/COMP3973/assignment2/ZenithSociety/ZenithWebSite/bin/Debug/netcoreapp2.0/ZenithWebSite.pdb
+/Users/vitor/Documents/BCIT/COMP3973/assignment2/ZenithSociety/ZenithWebSite/obj/Debug/netcoreapp2.0/ZenithWebSite.csproj.CoreCompileInputs.cache
+/Users/vitor/Documents/BCIT/COMP3973/assignment2/ZenithSociety/ZenithWebSite/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+/Users/vitor/Documents/BCIT/COMP3973/assignment2/ZenithSociety/ZenithWebSite/obj/Debug/netcoreapp2.0/ZenithWebSite.AssemblyInfoInputs.cache
+/Users/vitor/Documents/BCIT/COMP3973/assignment2/ZenithSociety/ZenithWebSite/obj/Debug/netcoreapp2.0/ZenithWebSite.AssemblyInfo.cs
+/Users/vitor/Documents/BCIT/COMP3973/assignment2/ZenithSociety/ZenithWebSite/obj/Debug/netcoreapp2.0/ZenithWebSite.dll
+/Users/vitor/Documents/BCIT/COMP3973/assignment2/ZenithSociety/ZenithWebSite/obj/Debug/netcoreapp2.0/ZenithWebSite.pdb
