@@ -1,0 +1,39 @@
+@model IEnumerable<ZenithWebSite.Models.ActivityType>
+
+@{
+    ViewBag.Title = "Activity Types";
+}
+
+<h2>Activity Types</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            Creation Date
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreationDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ActivityTypeId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ActivityTypeId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ActivityTypeId })
+        </td>
+    </tr>
+}
+
+</table>

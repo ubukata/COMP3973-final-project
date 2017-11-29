@@ -1,0 +1,48 @@
+@model IEnumerable<ZenithWebSite.Models.Event>
+
+@{
+    ViewBag.Title = "Events";
+}
+
+<h2>Events</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ActivityType.Description)
+            </th>
+            <th>
+                Date and Time
+            </th>
+            <th>
+                Is Active
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ActivityType.Description)
+                </td>
+                <td>
+                    @($"{item.DateFrom.ToString("hh:mm tt")} - {item.DateTo.ToString("hh:mm tt")} / {item.DateTo.ToLongDateString()}")
+                </td>
+                <td>
+                    @(item.IsActive ? "Yes" : "No")
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.EventId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.EventId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.EventId })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
