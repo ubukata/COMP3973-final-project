@@ -13122,11 +13122,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/vitor/Documents/BCIT/COMP3973/assignment2/ZenithSociety/ZenithWebSite/ZenithWebSite.csproj",
+      "projectUniqueName": "/Users/vitor/Documents/BCIT/COMP3973/git/assignment2/COMP3973-final-project/ZenithSociety/ZenithWebSite/ZenithWebSite.csproj",
       "projectName": "ZenithWebSite",
-      "projectPath": "/Users/vitor/Documents/BCIT/COMP3973/assignment2/ZenithSociety/ZenithWebSite/ZenithWebSite.csproj",
+      "projectPath": "/Users/vitor/Documents/BCIT/COMP3973/git/assignment2/COMP3973-final-project/ZenithSociety/ZenithWebSite/ZenithWebSite.csproj",
       "packagesPath": "/Users/vitor/.nuget/packages/",
-      "outputPath": "/Users/vitor/Documents/BCIT/COMP3973/assignment2/ZenithSociety/ZenithWebSite/obj/",
+      "outputPath": "/Users/vitor/Documents/BCIT/COMP3973/git/assignment2/COMP3973-final-project/ZenithSociety/ZenithWebSite/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
