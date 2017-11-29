@@ -37,6 +37,8 @@ namespace ZenithWebSite
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<MockData>();
 
+            services.AddCors();
+
             services.AddMvc();
         }
 
@@ -56,6 +58,8 @@ namespace ZenithWebSite
             // }
 
             app.UseStaticFiles();
+
+            app.UseCors(p => p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials());
 
             app.UseAuthentication();
 

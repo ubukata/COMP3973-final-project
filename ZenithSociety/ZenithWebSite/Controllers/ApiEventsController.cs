@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ZenithWebSite.Data;
+using ZenithWebSite.Models.EventViewModels;
 
 namespace ZenithWebSite.Controllers
 {
@@ -24,9 +25,27 @@ namespace ZenithWebSite.Controllers
             {
                 dateFrom = dateFrom.AddHours(0).AddMinutes(0).AddSeconds(0);
                 dateTo = dateTo.AddHours(23).AddMinutes(59).AddSeconds(59);
-                var events = await _context.Events.Where(_ => _.DateFrom >= dateFrom && _.DateTo <= dateTo).ToArrayAsync();
+                var events = await _context.Events.Where(_ =>
+                    _.IsActive
+                    && _.DateFrom >= dateFrom
+                    && _.DateTo <= dateTo).Select(_ => new EventViewModel()
+                    {
+                        DateFrom = _.DateFrom,
+                        StartTime = _.DateFrom.ToString("hh:mm tt"),
+                        EndTime = _.DateTo.ToString("hh:mm tt"),
+                        ActivityType = _.ActivityType.Description
+                    }).ToArrayAsync();
 
-                return Ok(events);
+                var groupedByDate = events
+                    .GroupBy(_ => _.DateFrom.Value.Date)
+                    .OrderBy(_ => _.Key)
+                    .Select(_ => new
+                    {
+                        Date = _.Key.ToLongDateString(),
+                        Events = _.ToArray()
+                    });
+
+                return Ok(groupedByDate);
             }
             catch (Exception ex)
             {

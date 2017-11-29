@@ -19,6 +19,8 @@ namespace ZenithWebSite.Models.EventViewModels
         [Display(Name = "Activity Type")]
         [Required]
         public int ActivityTypeId { get; set; }
+        public string StartTime { get; set; }
+        public string EndTime { get; set; }
 
         public EventViewModel()
         {
