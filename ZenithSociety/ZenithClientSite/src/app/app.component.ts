@@ -9,7 +9,7 @@ import { EventsByDate } from '../events-by-date';
   providers: [EventsServiceService]
 })
 export class AppComponent implements OnInit {
-  eventsByDate: EventsByDate;
+  eventsByDate: EventsByDate[];
   page: number;
   dateFrom: string;
   dateTo: string;
